@@ -2,6 +2,8 @@
 
 Solve Quizlet Match games without any effort and reach the top of the leaderboards.
 
+![Alt Text](https://github.com/xelaoliver/quizlet-match-solver/blob/main/quizlet.gif)
+
 # Usage
 
 Download either the C++ or Python file. Copy the *Terms in this set* from your chosen set in Quizlet and then, create a **dictionary.txt** file in the same directory. Do not delete any whitespace as both programs automatically account for them.
