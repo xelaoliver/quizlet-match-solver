@@ -1,3 +1,5 @@
+// Alex Oliver 2025
+
 #include <windows.h>
 #include <iostream>
 #include <string>
@@ -95,7 +97,7 @@ int main() {
     SetConsoleOutputCP(CP_UTF8);
 
     string output;
-    ifstream lines("C:/Users/emmet/Desktop/Programming/Python/general.txt");
+    ifstream lines("path/to/dictionary.txt");
     string line;
     while (getline(lines, line)) {
         output += line+"\n";
