@@ -2,9 +2,8 @@
 
 import pyperclip
 import pyautogui
-import math
 
-with open("path/to/dictionary.txt", encoding="utf-8") as file:
+with open("C:/Users/emmet/Desktop/Programming/Python/general.txt", encoding="utf-8") as file:
     lines = [line.rstrip() for line in file]
 
 reference = []
@@ -23,17 +22,19 @@ game = s.split("\r\n")
 game = game[7:len(game)-1]
 
 instructions = []
-for i, item in enumerate(game):
-    j = reference.index(item)
-    if j % 2 == 0:
+
+for i in range(12):
+    j = reference.index(game[i])
+
+    if j%2 == 0:
         end = j+1
     else:
         end = j-1
-
+    
     append = not any(game.index(reference[end]) in jtem for jtem in instructions)
     
     if append:
-        instructions.append([game.index(reference[reference.index(game[i])]), game.index(reference[end])])
+        instructions.append([game.index(game[i]), game.index(reference[end])])
 
 pyautogui.moveTo(390, 310, duration = 0)
 for i in range(len(instructions)):
