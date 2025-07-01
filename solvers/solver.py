@@ -3,7 +3,7 @@
 import pyperclip
 import pyautogui
 
-with open("C:/Users/emmet/Desktop/Programming/Python/general.txt", encoding="utf-8") as file:
+with open("path/to/dictionary.txt", encoding="utf-8") as file:
     lines = [line.rstrip() for line in file]
 
 reference = []
