@@ -12,7 +12,7 @@ Position your mouse cursor on the *Start Game* button and run the program (this 
 
 Or:
 
-Download the executable from: [drive.google.com/drive/folders/1sajJ-Uu3VOyB3TX5IjtuEJCEOQJBu4V7?usp=drive_link](https://drive.google.com/drive/folders/1sajJ-Uu3VOyB3TX5IjtuEJCEOQJBu4V7?usp=drive_link) and follow the instructions in README.txt
+Download the executable from: [drive.google.com/drive/folders/1sajJ-Uu3VOyB3TX5IjtuEJCEOQJBu4V7?usp=drive_link](https://drive.google.com/drive/folders/1sajJ-Uu3VOyB3TX5IjtuEJCEOQJBu4V7?usp=drive_link) and follow the instructions in **README.txt**
 
 # Information
 
