@@ -18,6 +18,7 @@ On my daily daily driver, I can complete a match in 2.2 seconds using the C++ ve
 
 - The C++ version will not care if your text file input is not found.
 - These programs only work on Windows
+- These programs may not work one/both of the match sentences/paragraphs is too long. I'm working towards fixing that, it's been causing false bugs in the program ever since the start!
 
 # License
 
