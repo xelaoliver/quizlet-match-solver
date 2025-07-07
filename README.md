@@ -10,6 +10,10 @@ Download either the C++ or Python file. Copy the *Terms in this set* from your c
 
 Position your mouse cursor on the *Start Game* button and run the program (this can be done in VS Code by pressing <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>n</kbd>).
 
+Or:
+
+Download the executable from: [drive.google.com/drive/folders/1sajJ-Uu3VOyB3TX5IjtuEJCEOQJBu4V7?usp=drive_link](https://drive.google.com/drive/folders/1sajJ-Uu3VOyB3TX5IjtuEJCEOQJBu4V7?usp=drive_link) and follow the instructions in README.txt
+
 # Information
 
 On my daily daily driver, I can complete a match in 2.2 seconds using the C++ version and 2.9 seconds using the Python version. I doubt that I'll be able to program a faster way to solve these because I had to add delay between mouse clicks to let Quizlet correctly register them. Both versions of this solver work by encoding text into UTF-8 for parsing, so this can solve matches in different languages.
