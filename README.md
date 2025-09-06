@@ -16,7 +16,7 @@ Download the executable from: [drive.google.com/drive/folders/1sajJ-Uu3VOyB3TX5I
 
 # Information
 
-On my daily daily driver, I can complete a match in 2.2 seconds using the C++ version and 2.4 seconds using the Python version. I doubt that I'll be able to program a faster way to solve these because I had to add delay between mouse clicks to let Quizlet correctly register them. Both versions of this solver work by encoding text into UTF-8 for parsing, so this can solve matches in different languages.
+On my daily daily driver, I can complete a match in 2.2 seconds using the C++ version (although this one has issues) and 2.4 seconds using the Python version. I doubt that I'll be able to program a faster way to solve these because I had to add delay between mouse clicks to let Quizlet correctly register them. Both versions of this solver work by encoding text into UTF-8 for parsing, so this can solve matches in different languages.
 
 ## Beware
 
