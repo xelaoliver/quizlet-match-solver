@@ -6,7 +6,7 @@ import pyautogui
 with open("path/to/dictionary.txt", encoding="utf-8") as file:
     reference = [line.rstrip() for line in file]
 
-positions = [[0, 0], [1, 0], [2, 0], [3, 0], [0, 1], [1, 1], [2, 1], [3, 1], [0, 2], [1, 2], [2, 2], [3, 2]]
+positions = [[390, 310], [760, 310], [1130, 310], [1500, 310], [390, 590], [760, 590], [1130, 590], [1500, 590], [390, 870], [760, 870], [1130, 870], [1500, 870]]
 instructions = []
 pyautogui.PAUSE = .085
 
@@ -17,6 +17,9 @@ pyautogui.hotkey("ctrlleft", "c")
 s = pyperclip.paste()
 game = s.split("\r\n")
 game = game[7:len(game)-1]
+reference = [line.strip()[:100]+"…" if len(line) > 100 else line.strip() for line in reference]
+
+print(game)
 
 for i in range(12):
     j = reference.index(game[i])
@@ -25,18 +28,13 @@ for i in range(12):
         end = j+1
     else:
         end = j-1
-    
-    append = not any(game.index(reference[end]) in jtem for jtem in instructions)
 
-    if append:
-        instructions.append([game.index(game[i]), game.index(reference[end])])
+    x = game.index(game[i])
 
-pyautogui.moveTo(390, 310, duration = 0)
-for i in range(len(instructions)):
-    a = positions[instructions[i][0]]
-    pyautogui.moveTo(390+(a[0]*370), 310+(a[1]*280), duration = 0)
-    pyautogui.click()
+    if not x in instructions:
+        instructions.extend([x, game.index(reference[end])])
 
-    a = positions[instructions[i][1]]
-    pyautogui.moveTo(390+(a[0]*370), 310+(a[1]*280), duration = 0)
+for i in range(12):
+    a = positions[instructions[i]]
+    pyautogui.moveTo(a[0], a[1], duration = 0)
     pyautogui.click()
